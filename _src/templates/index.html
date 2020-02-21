@@ -4,53 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mi web</title>
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
 
   <body>
     <header class="hero">
-      <div>
+      <a class="menu-button"></a>
+      <div class="hero-content">
         <h1>anonymous proxy</h1>
         <p>In hac habitasse platea dictumst</p>
-        <a href="#" class="header-button">flecha</a>
+        <button type="button">flecha</button>
       </div>
     </header>
     <main>
-      <h2>looking though a window</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptatem
-        accusamus nesciunt odio vitae! .
-      </p>
-      <a href="#" class="main-button">Go</a>
+      <div class="main">
+        <h2>looking though a window</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+          voluptatem accusamus nesciunt odio vitae! .
+        </p>
+        <a href="#" class="main-button">Go</a>
+      </div>
     </main>
     <aside>
-      <h2>3 reasons to purchase</h2>
-      <h3>Ut sed metus</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <h3>Curabitur ac erat</h3>
-      <p>Magnam ratione voluptas non, mollitia.</p>
-      <h3>Morbi dictum</h3>
-      <p>Quos, aliquam nesciunt.</p>
-      <a href="#" class="aside-button">More reasons</a>
+      <div class="aside">
+        <div class="reasons">
+          <h2>3 reasons to purchase</h2>
+        </div>
+        <div class="reason-1">
+          <h3>Ut sed metus</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="reason-2">
+          <h3>Curabitur ac erat</h3>
+          <p>Magnam ratione voluptas non, mollitia.</p>
+        </div>
+        <div class="reason-3">
+          <h3>Morbi dictum</h3>
+          <p>Quos, aliquam nesciunt.</p>
+        </div>
+        <div class="button-reasons">
+          <a href="#" class="aside-button">More reasons</a>
+        </div>
+      </div>
     </aside>
     <footer>
-      <nav class="references">
-        <ul>
-          <li><a href="https://adalab.es/">articles</a></li>
-          <li><a href="https://adalab.es/">events</a></li>
-          <li><a href="https://adalab.es/">reasons</a></li>
-          <li><a href="https://adalab.es/">tips</a></li>
-        </ul>
-      </nav>
-      <nav class="social-networks">
-        <ul>
-          <li><a href="https://adalab.es/">twitter</a></li>
-          <li><a href="https://adalab.es/">instagram</a></li>
-          <li><a href="https://adalab.es/">mastodon.social</a></li>
-        </ul>
-      </nav>
-      <small>&copy; 2017 we <img src="" alt="" /> components </small>
+      <div class="footer">
+        <a href="#" class="header-button">flecha</a>
+        <div class="references">
+          <nav class="nav-references">
+            <ul>
+              <li><a href="https://adalab.es/">articles</a></li>
+              <li><a href="https://adalab.es/">events</a></li>
+              <li><a href="https://adalab.es/">reasons</a></li>
+              <li><a href="https://adalab.es/">tips</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="networks">
+          <nav class="nav-networks">
+            <ul>
+              <li><a href="https://adalab.es/">twitter</a></li>
+              <li><a href="https://adalab.es/">instagram</a></li>
+              <li><a href="https://adalab.es/">mastodon.social</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="copyright">
+          <small>&copy; 2017 we ❤️ components </small>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
