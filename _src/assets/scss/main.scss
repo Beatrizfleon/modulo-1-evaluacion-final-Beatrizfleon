@@ -7,12 +7,7 @@ body {
 .hero-content {
   border: 4px solid lightgreen;
 }
-.hero h1 {
-  font-family: "Roboto";
-  font-size: 2.625rem;
-  text-transform: uppercase;
-  list-style: height 55px;
-}
+
 .main {
   border: 4px solid yellow;
 }
@@ -94,8 +89,8 @@ body {
   height: 568px;
   display: flex;
   justify-content: center;
-
-  // text styles
+  flex-direction: column;
+  align-items: flex-end;
   align-items: center;
   text-align: center;
   color: white;
@@ -104,6 +99,24 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+.hero .title-item {
+  display: block;
+  font-family: "RobotoSlab-Bold";
+  font-size: 2.625rem;
+  text-transform: uppercase;
+  list-style: height 55px;
+}
+.circle-hero {
+  width: 45px;
+  height: 45px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 470px;
 }
 //  MAIN
 .main {
@@ -148,6 +161,7 @@ body {
   grid-area: button-reasons;
   background-color: lightskyblue;
 }
+
 // TABLET
 
 @media all and (min-width: 768px) {
