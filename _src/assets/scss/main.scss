@@ -3,45 +3,41 @@ body {
   margin: 0;
   padding: 0;
 }
-.hero {
-  border: 4px solid red;
-  color: red($color: #000000);
-  width: 100vw;
-  height: 568px;
-  display: flex;
-  justify-content: center;
-
-  // text styles
-  align-items: center;
-  text-align: center;
-  color: white;
-
-  background-image: url(../images/cover.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
+// CAJAS
 .hero-content {
   border: 4px solid lightgreen;
 }
 .hero h1 {
   font-family: "Roboto";
   font-size: 2.625rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
   list-style: height 55px;
 }
 .main {
   border: 4px solid yellow;
 }
-.aside {
-  border: 4px solid purple;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  width: 624px;
-  height: 320px;
+
+.reasons {
+  grid-column: span 12;
+  background-color: turquoise;
 }
+.reason-1 {
+  grid-column: span 12;
+  background-color: lightsalmon;
+}
+.reason-2 {
+  grid-column: span 12;
+  background-color: burlywood;
+}
+.reason-3 {
+  grid-column: span 12;
+  background-color: pink;
+}
+.button-reasons {
+  grid-column: span 12;
+  background-color: lime;
+}
+
 .reasons {
   grid-column: span 12;
   background-color: turquoise;
@@ -73,4 +69,96 @@ body {
 }
 .copyright {
   border: 4px solid rgb(248, 34, 202);
+}
+// HEADER
+
+.hamburger {
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #0271bc;
+  position: fixed;
+}
+.hamburger-inner {
+  width: 16px;
+  height: 14px;
+}
+.hero {
+  border: 4px solid red;
+  color: red($color: #000000);
+  width: 100vw;
+  height: 568px;
+  display: flex;
+  justify-content: center;
+
+  // text styles
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+//  MAIN
+.main {
+  height: 376px;
+  background-color: white;
+}
+
+// ASIDE
+.aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 624px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "reasons reasons reasons"
+    "reason-1 reason-1 reason-1"
+    "reason-2 reason-2 reason-2"
+    "reason-3 reason-3 reason-3"
+    "button-reasons button-reasons button-reasons";
+}
+.aside .reasons {
+  grid-area: reasons;
+  background-color: pink;
+}
+.aside .reason-1 {
+  grid-area: reason-1;
+  background-color: salmon;
+}
+.aside .reason-2 {
+  grid-area: reason-2;
+  background-color: lightgreen;
+}
+.aside .reason-3 {
+  grid-area: reason-3;
+  background-color: lightyellow;
+}
+.aside .button-reasons {
+  grid-area: button-reasons;
+  background-color: lightskyblue;
+}
+// TABLET
+
+@media all and (min-width: 768px) {
+  .aside {
+    width: 100%;
+    max-width: height 397px;
+    grid-template-areas:
+      "reasons reasons reasons"
+      "reason-1 reason-2 reason-3"
+      "reason-1 reason-2 reason-3"
+      "reason-1 reason-2 reason-3"
+      "button-reasons button-reasons button-reasons";
+  }
 }
