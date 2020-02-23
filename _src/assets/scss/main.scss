@@ -235,7 +235,7 @@ body {
 
 .footer-circle {
   position: relative;
-  top: -60px;
+  top: -35px;
   width: 45px;
   height: 45px;
   background: white;
@@ -278,6 +278,7 @@ body {
   font-family: "Roboto";
   text-transform: lowercase;
   line-height: 30px;
+  margin-bottom: 45px;
 }
 .list-footer {
   line-height: 30px;
@@ -326,13 +327,39 @@ body {
   }
   .footer {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-left: 39px;
   }
+
+  .references {
+    padding-left: 0px;
+    align-items: center;
+    margin-left: 0px;
+    padding-left: 0px;
+    order: 2;
+  }
+  .networks {
+    align-items: center;
+    order: 3;
+  }
+
+  .footer-circle {
+    position: relative;
+    top: -20px;
+    width: 45px;
+    height: 45px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+  }
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1200px) {
   .hero .title-item {
     font-size: 5rem;
     line-height: 106px;
