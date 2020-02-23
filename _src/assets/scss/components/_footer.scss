@@ -58,7 +58,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto";
+  font-family: $principalFont;
   text-transform: lowercase;
   line-height: 30px;
   margin-bottom: 45px;
@@ -79,7 +79,7 @@
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Roboto";
+  font-family: $principalFont;
   font-size: 1rem;
 }
 @media all and (min-width: 768px) {
@@ -100,7 +100,7 @@
     }
 
     &-circle {
-      top: -5px;
+      top: -3px;
     }
   }
 
@@ -128,7 +128,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    font-family: "Roboto";
+    font-family: $principalFont;
     text-transform: lowercase;
     line-height: 30px;
   }

@@ -15,7 +15,7 @@
     "reason-3 reason-3 reason-3"
     "button-reasons button-reasons button-reasons";
   .reasons {
-    font-family: "Roboto Slab";
+    font-family: $boldFont;
     font-weight: bold;
     font-size: 1rem;
     text-transform: capitalize;
@@ -36,14 +36,14 @@
   }
   h3 {
     margin: 0px;
-    font-family: "Roboto Slab";
+    font-family: $boldFont;
     font-weight: bold;
     font-size: 1.125rem;
     line-height: 30px;
   }
   p {
     margin: 0px 70px;
-    font-family: "Roboto";
+    font-family: $principalFont;
     font-size: 1.125 rem;
     text-align: center;
     line-height: 30px;
@@ -75,28 +75,24 @@
     width: 184px;
     height: 45px;
     border-radius: 22.5px;
-    background-color: #f26002;
+    background-color: $myOrange;
     font-size: 1.25rem;
     color: white;
-    border: solid #f26002;
+    border: solid $myOrange;
     margin-bottom: 60px;
     transition: 0.4s;
   }
   button:hover {
     font-size: 1.5rem;
     background-color: white;
-    color: #f26002;
-    border: solid #f26002;
+    color: $myOrange;
+    border: solid $myOrange;
   }
 
   button:focus {
     outline: 0;
   }
 }
-
-// .aside {
-//   margin: 0px;
-// }
 
 @media all and (min-width: 768px) {
   .aside {
