@@ -109,7 +109,7 @@ body {
   line-height: 30px;
   color: #4a4a4a;
 }
-.main button {
+.main-button {
   width: 76px;
   height: 45px;
   border-radius: 22.5px;
@@ -117,6 +117,13 @@ body {
   font-size: 1.25rem;
   color: #f26002;
   border: solid #f26002;
+  transition: 0.4s;
+}
+.main-button:hover {
+  background-color: #f26002;
+  color: white;
+  opacity: 0, 8;
+  font-size: 1.5rem;
 }
 
 // ASIDE
@@ -199,6 +206,13 @@ h3 {
   color: white;
   border: solid #f26002;
   margin-bottom: 60px;
+  transition: 0.4s;
+}
+.aside button:hover {
+  font-size: 1.5rem;
+  background-color: white;
+  color: #f26002;
+  border: solid #f26002;
 }
 // FOOTER
 .footer-circle {
