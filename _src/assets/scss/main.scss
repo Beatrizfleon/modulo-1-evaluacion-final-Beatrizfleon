@@ -96,7 +96,7 @@
 }
 .tips {
   font-family: "Roboto";
-  font-size: 0, 875rem;
+  font-size: 0.875rem;
   color: #8ccbea;
   text-transform: capitalize;
 }
@@ -315,14 +315,9 @@
 // TABLET
 
 @media all and (min-width: 768px) {
-  .hero {
-    height: 100vh;
-    // padding-top: 384px;
-  }
   .hero-content {
     margin: 384px 39px 172px 39px;
   }
-
   .hero .title-item {
     font-size: 5rem;
     line-height: 106px;
@@ -334,10 +329,22 @@
   .hero-circle {
     bottom: 45px;
   }
-
   .main {
     padding: 30px 39px 60px 30px;
     height: 330px;
+  }
+  .tips {
+    font-size: 0.875rem;
+  }
+  .main h2 {
+    font-size: 1.625rem;
+    line-height: 30px;
+  }
+  .main p {
+    font-size: 1.25rem;
+  }
+  .main-button {
+    width: 91px;
   }
   .aside {
     width: 100%;
@@ -349,7 +356,6 @@
       "reason-1 reason-2 reason-3"
       "button-reasons button-reasons button-reasons";
   }
-
   .reasons {
     padding-top: 30px;
   }
@@ -413,8 +419,32 @@
   }
 }
 @media all and (min-width: 1200px) {
+  .hero-content {
+    margin: 384px 275px 120px 275px;
+  }
   .hero .title-item {
-    font-size: 5rem;
-    line-height: 106px;
+    font-size: 6.25rem;
+    line-height: 132px;
+  }
+  .hero p {
+    font-size: 1.5rem;
+    margin: 0px;
+  }
+  .hero-circle {
+    bottom: 13px;
+  }
+  .main {
+    padding: 60px 275px 60px 275px;
+    height: 360px;
+  }
+  .tips {
+    font-size: 1rem;
+  }
+  .main h2 {
+    font-size: 2rem;
+    line-height: 45px;
+  }
+  .main-button {
+    width: 160px;
   }
 }
