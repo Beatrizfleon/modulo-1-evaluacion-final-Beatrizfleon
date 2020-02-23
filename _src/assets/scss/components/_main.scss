@@ -1,0 +1,86 @@
+.main {
+  padding: 30px 15px 45px 15px;
+  height: 376px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+}
+.tips {
+  font-family: "Roboto";
+  font-size: 0.875rem;
+  color: #8ccbea;
+  text-transform: capitalize;
+}
+.main h2 {
+  font-family: "Roboto Slab";
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 30px;
+  color: black;
+  text-transform: capitalize;
+  margin: 0px;
+}
+.main p {
+  font-family: "Roboto";
+  font-size: 1.125rem;
+  line-height: 30px;
+  color: #4a4a4a;
+  margin: 0px;
+}
+.main-button {
+  font-family: "Roboto";
+  width: 76px;
+  height: 45px;
+  border-radius: 22.5px;
+  background-color: white;
+  font-size: 1.25rem;
+  color: #f26002;
+  border: solid #f26002;
+  transition: 0.4s;
+}
+.main-button:hover {
+  background-color: #f26002;
+  color: white;
+  opacity: 0, 8;
+  font-size: 1.5rem;
+}
+.main-button:focus {
+  outline: 0;
+}
+@media all and (min-width: 768px) {
+  .main {
+    padding: 30px 39px 60px 30px;
+    height: 330px;
+  }
+  .tips {
+    font-size: 0.875rem;
+  }
+  .main h2 {
+    font-size: 1.625rem;
+    line-height: 30px;
+  }
+  .main p {
+    font-size: 1.25rem;
+  }
+  .main-button {
+    width: 91px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .main {
+    padding: 60px 275px 60px 275px;
+    height: 360px;
+  }
+  .tips {
+    font-size: 1rem;
+  }
+  .main h2 {
+    font-size: 2rem;
+    line-height: 45px;
+  }
+  .main-button {
+    width: 160px;
+  }
+}
