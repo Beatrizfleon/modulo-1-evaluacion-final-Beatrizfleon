@@ -61,6 +61,7 @@ body {
 .hero .title-item {
   display: block;
   font-family: "Roboto Slab";
+  font-weight: bold;
   font-size: 2.625rem;
   text-transform: uppercase;
   line-height: 55px;
@@ -97,7 +98,8 @@ body {
   text-transform: capitalize;
 }
 .main h2 {
-  font-family: "RobotoSlab-Bold";
+  font-family: "Roboto Slab";
+  font-weight: bold;
   font-size: 1.5rem;
   line-height: 30px;
   color: black;
@@ -110,6 +112,7 @@ body {
   color: #4a4a4a;
 }
 .main-button {
+  font-family: "Roboto";
   width: 76px;
   height: 45px;
   border-radius: 22.5px;
@@ -145,6 +148,8 @@ body {
     "button-reasons button-reasons button-reasons";
 }
 .aside .reasons {
+  font-family: "Roboto Slab";
+  font-weight: bold;
   text-transform: capitalize;
   display: flex;
   justify-content: center;
@@ -161,35 +166,38 @@ body {
   grid-area: reason-1;
   line-height: 30px;
 }
-.aside p,
-h2,
-h3 {
+.aside {
   margin: 0px;
 }
-.aside .reason-2 {
+
+.aside h3 {
   margin: 0px;
+  font-family: "Roboto Slab";
+  font-weight: bold;
+}
+.aside p {
+  margin: 0px 70px;
+  font-family: "Roboto";
+  font-size: 1.125 rem;
+  text-align: center;
+  line-height: 30px;
+}
+.aside .reason-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   grid-area: reason-2;
-  line-height: 30px;
-}
-.reason-2 p {
-  margin: 0px;
 }
 
 .aside .reason-3 {
-  margin: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   grid-area: reason-3;
 }
-.reason-3 p {
-  margin: 0px;
-}
+
 .aside .button-reasons {
   display: flex;
   justify-content: center;
@@ -215,10 +223,19 @@ h3 {
   border: solid #f26002;
 }
 // FOOTER
+.footer {
+  background-color: #304268;
+  height: 465px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer-circle {
   position: relative;
-  top: -70px;
-  left: 50%;
+  top: -60px;
   width: 45px;
   height: 45px;
   background: white;
@@ -228,27 +245,24 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-.footer {
-  background-color: #304268;
-  height: 465px;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 0px;
-  padding-left: 0px;
-}
+
 .references {
   padding-left: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin-left: 0px;
   padding-left: 0px;
 }
 .networks {
-  padding-left: 60px;
+  align-items: center;
+}
+
+.nav-references {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav-networks {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -261,12 +275,19 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Roboto";
+  text-transform: lowercase;
+  line-height: 30px;
 }
 .list-footer {
   line-height: 30px;
   list-style-type: none;
   margin-left: 0px;
   padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .link-footer {
   margin-left: 0px;
