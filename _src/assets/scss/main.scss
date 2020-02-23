@@ -133,6 +133,9 @@
   opacity: 0, 8;
   font-size: 1.5rem;
 }
+.main-button:focus {
+  outline: 0;
+}
 
 // ASIDE
 .aside {
@@ -226,6 +229,10 @@
   background-color: white;
   color: #f26002;
   border: solid #f26002;
+}
+
+.aside button:focus {
+  outline: 0;
 }
 // FOOTER
 .footer {
