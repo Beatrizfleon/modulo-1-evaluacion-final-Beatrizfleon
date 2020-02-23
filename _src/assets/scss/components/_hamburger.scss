@@ -8,8 +8,9 @@
   height: 44px;
   background-color: #0271bc;
   position: fixed;
-}
-.hamburger-inner {
-  width: 16px;
-  height: 14px;
+
+  &-inner {
+    width: 16px;
+    height: 14px;
+  }
 }
