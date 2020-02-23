@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mi web</title>
     <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
@@ -15,6 +23,7 @@
     <div class="hamburger">
       <a href="https://adalab.es/">
         <img
+          id="menu"
           class="hamburger-inner"
           src="../assets/images/ico-menu.png"
           alt="Menu-icon"
@@ -28,7 +37,7 @@
         <span class="title-item">proxy</span>
         <p>In hac habitasse platea dictumst</p>
       </div>
-      <div class="circle-hero">
+      <div class="hero-circle">
         <a href="#reasons">
           <img
             src="../assets/images/ico-scroll-down.png"
@@ -42,7 +51,7 @@
     <main>
       <div class="main">
         <small class="tips">insomnia tips</small>
-        <h2 class="main-h2">looking though a window</h2>
+        <h2>looking though a window</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
           voluptatem accusamus nesciunt odio vitae! .
@@ -75,29 +84,54 @@
     </aside>
     <footer>
       <div class="footer">
-        <a href="#" class="header-button">flecha</a>
+        <div class="footer-circle">
+          <a href="#menu">
+            <img
+              src="../assets/images/ico-arrow.png"
+              alt="icon-arrow"
+              title="Go to menu"
+            />
+          </a>
+        </div>
         <div class="references">
           <nav class="nav-references">
-            <ul>
-              <li><a href="https://adalab.es/">articles</a></li>
-              <li><a href="https://adalab.es/">events</a></li>
-              <li><a href="https://adalab.es/">reasons</a></li>
-              <li><a href="https://adalab.es/">tips</a></li>
+            <ul class="list-footer">
+              <li>
+                <a class="link-footer" href="https://adalab.es/">articles</a>
+              </li>
+              <li>
+                <a class="link-footer" href="https://adalab.es/">events</a>
+              </li>
+              <li>
+                <a class="link-footer" href="https://adalab.es/">reasons</a>
+              </li>
+              <li>
+                <a class="link-footer" href="https://adalab.es/">tips</a>
+              </li>
             </ul>
           </nav>
         </div>
         <div class="networks">
           <nav class="nav-networks">
-            <ul>
-              <li><a href="https://adalab.es/">twitter</a></li>
-              <li><a href="https://adalab.es/">instagram</a></li>
-              <li><a href="https://adalab.es/">mastodon.social</a></li>
+            <ul class="list-footer">
+              <li>
+                <a class="link-footer" href="https://adalab.es/">twitter</a>
+              </li>
+              <li>
+                <a class="link-footer" href="https://adalab.es/">instagram</a>
+              </li>
+              <li>
+                <a class="link-footer" href="https://adalab.es/"
+                  >mastodon.social</a
+                >
+              </li>
             </ul>
           </nav>
         </div>
-        <div class="copyright">
-          <small>&copy; 2017 we ❤️ components </small>
-        </div>
+        <small class="copyright">
+          <span> &copy; 2017 </span>
+          <span> we ❤️ components</span>
+        </small>
       </div>
     </footer>
   </body>
