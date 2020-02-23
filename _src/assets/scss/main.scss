@@ -1,4 +1,4 @@
-body {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -104,12 +104,14 @@ body {
   line-height: 30px;
   color: black;
   text-transform: capitalize;
+  margin: 0px;
 }
 .main p {
   font-family: "Roboto";
   font-size: 1.125rem;
   line-height: 30px;
   color: #4a4a4a;
+  margin: 0px;
 }
 .main-button {
   font-family: "Roboto";
@@ -235,7 +237,7 @@ body {
 
 .footer-circle {
   position: relative;
-  top: -35px;
+  top: -25px;
   width: 45px;
   height: 45px;
   background: white;
@@ -243,6 +245,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.footer-items {
+  height: 465px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -315,9 +325,14 @@ body {
     font-size: 1.5rem;
     font-family: "roboto";
   }
+
+  .main {
+    padding: 30px 39px 60px 30px;
+    height: 330px;
+  }
   .aside {
     width: 100%;
-    max-width: height 397px;
+    height: 397px;
     grid-template-areas:
       "reasons reasons reasons"
       "reason-1 reason-2 reason-3"
@@ -325,29 +340,59 @@ body {
       "reason-1 reason-2 reason-3"
       "button-reasons button-reasons button-reasons";
   }
+
+  .reasons {
+    padding-top: 30px;
+  }
   .footer {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-items {
+    padding: 45px 39px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding-left: 39px;
+    align-items: flex-start;
   }
 
   .references {
-    padding-left: 0px;
-    align-items: center;
-    margin-left: 0px;
-    padding-left: 0px;
+    text-align: left;
     order: 2;
   }
   .networks {
     align-items: center;
     order: 3;
   }
+  .list-footer {
+    width: 210px;
+    line-height: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .copyright {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Roboto";
+    text-transform: lowercase;
+    line-height: 30px;
+  }
 
   .footer-circle {
     position: relative;
-    top: -20px;
+    top: -10px;
     width: 45px;
     height: 45px;
     background: white;
@@ -356,7 +401,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-self: flex-start;
   }
 }
 @media all and (min-width: 1200px) {
